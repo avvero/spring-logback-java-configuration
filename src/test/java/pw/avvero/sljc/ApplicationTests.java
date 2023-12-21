@@ -1,10 +1,10 @@
-package pw.avvero.springlogbackjavaconfiguration;
+package pw.avvero.sljc;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringLogbackJavaConfigurationApplicationTests {
+class ApplicationTests {
 	@Test
 	void contextLoads() {
 	}
