@@ -22,7 +22,7 @@ public class MyLogbackConfigurator extends ContextAwareBase implements Configura
     @Override
     public ExecutionStatus configure(LoggerContext context) {
         System.out.println("================================================");
-        System.out.println("You are using org.springframework.boot.logging.logback.CustomConfigurator");
+        System.out.println("You are using org.springframework.boot.logging.logback.MyLogbackConfigurator");
         System.out.println("================================================");
         /*
          * Appenders
