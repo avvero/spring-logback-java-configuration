@@ -12,15 +12,27 @@ java {
 	sourceCompatibility = '17'
 }
 
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
 repositories {
 	mavenCentral()
 }
 
 dependencies {
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
 	implementation "org.springframework.boot:spring-boot-starter"
 //	runtimeOnly "ch.qos.logback:logback-core:1.2.8"
 //	runtimeOnly "ch.qos.logback:logback-classic:1.2.8"
 //	runtimeOnly "org.codehaus.groovy:groovy:3.0.19"
+
+	testCompileOnly "org.projectlombok:lombok"
+	testAnnotationProcessor "org.projectlombok:lombok"
 	testImplementation "org.springframework.boot:spring-boot-starter-test"
 }
 
