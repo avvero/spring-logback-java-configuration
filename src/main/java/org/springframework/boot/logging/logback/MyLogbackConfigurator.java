@@ -35,7 +35,7 @@ public class MyLogbackConfigurator extends ContextAwareBase implements Configura
         PatternLayoutEncoder encoder = new PatternLayoutEncoder();
         encoder.setContext(context);
         encoder.setCharset(UTF_8);
-        encoder.setPattern("%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n");
+        encoder.setPattern("%d{mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n");
         encoder.start();
         //
         appender.setEncoder(encoder);
